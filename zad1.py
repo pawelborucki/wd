@@ -9,4 +9,3 @@ print(m.ceil(liczba))
 #lfloor 4.80 rfloor
 liczba2 = 4.80
 print(m.floor(liczba2))
-# test git 
