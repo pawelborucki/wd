@@ -15,3 +15,8 @@ for x in range((wys + 1) // 2 + 1, wys + 1):
     for z in range((wys + 1 - x)*2 - 1):
         print("o", end = "")
     print()
+''' 
+wys = int(sys.stdin.readline())
+
+for x in list(range(wys)) + list(reversed(range(wys-1))):
+  print('{: <{w1}}{:*<{w2}}'.format('', '', w1=wys-x-1, w2=x*2+1)) '''
