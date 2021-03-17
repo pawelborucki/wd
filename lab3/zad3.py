@@ -2,8 +2,7 @@ produkty = {"banany": "kg",
             "ananas": "sztuki",
             "baton": "sztuki",
             "gruszki": "kg"}
-odwrocony = {value: key for key, value in produkty.items()}
-sztuki = [odwrocony["sztuki"] for x in odwrocony]
+sztuki = [key for key,value in produkty.items() if value == "sztuki"]
 print(produkty)
-print(odwrocony)
 print(sztuki)
+
