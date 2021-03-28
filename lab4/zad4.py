@@ -1,9 +1,5 @@
 class NaZakupy:
-    nazwa_produktu = ""
-    ilosc = 0
-    jednostka_miary = ""
-    cena_jed = 0
-    def konstruktor(self, nazwa, ilosc, jednostka, cena):
+    def __init__(self, nazwa, ilosc, jednostka, cena):
         self.nazwa_produktu = nazwa 
         self.ilosc = ilosc
         self.jednostka_miary = jednostka 
@@ -14,11 +10,12 @@ class NaZakupy:
         print(self.jednostka_miary, "\n")
         print(self.cena_jed, "\n")
     def ile_produktu(self):
-        print(self.ilosc, " ")
-        print(self.jednostka_miary)
-    def ile_kosztuje(self, x):
-        print(self.cena_jed * x)
+        print(self.ilosc, " ", self.jednostka_miary)
+    def ile_kosztuje(self):
+        print(int(self.cena_jed) * self.ilosc)
 
-obiekt = NaZakupy.konstruktor(x,"s",2,"szt",2)
-print(obiekt)
+obiekt1 = NaZakupy("ananas", 5, "szt", "6")
+print(obiekt1.wyswietl_produkt())
+print(obiekt1.ile_produktu())
+print(obiekt1.ile_kosztuje(10))
 
