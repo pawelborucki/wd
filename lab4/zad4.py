@@ -17,5 +17,5 @@ class NaZakupy:
 obiekt1 = NaZakupy("ananas", 5, "szt", "6")
 print(obiekt1.wyswietl_produkt())
 print(obiekt1.ile_produktu())
-print(obiekt1.ile_kosztuje(10))
+print(obiekt1.ile_kosztuje())
 

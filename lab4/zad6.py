@@ -23,7 +23,7 @@ class Slowa:
         else:
             print(f'{self.slowo1} i {self.slowo2} to nie są anagramy')
     def wyswietl_wyrazy(self):
-        print(f'{self.slowo1} , {self.slowo2}')
+        print(f'{self.slowo1}, {self.slowo2}')
 obiekt = Slowa("tama", "mata")
 print(obiekt.sprawdz_czy_anagramy())
 print(obiekt.wyswietl_wyrazy())
