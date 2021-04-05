@@ -3,6 +3,8 @@ class Robot:
         self.x = x
         self.y = y
         self.krok = krok
+    def __del__(self):
+        print("obiekt został zniszczony")
     def idz_w_gore(self, ile_krokow):
         self.x += ile_krokow * self.krok
     def idz_w_dol(self, ile_krokow):
