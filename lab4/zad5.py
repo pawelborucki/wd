@@ -1,6 +1,26 @@
 class ciagi:
     def wyswietl_dane(self):
-        print(f'an = {self.pierwszyWyraz} + (an - 1) * {self.roznica}')
-    def pobierz_elementy(*x):
-        print("Elementy ciagu: ", x)
-    
+        for ciag in self.ciagi:
+            print(ciag, end="\t")
+
+    def pobierz_elementy(self,*element):
+        self.ciagi.append(element)
+
+    def pobierz_parametry(self):
+        self.a1 = int(input("Podaj a1: "))
+        self.n = int(input("Podaj ilosc elementow: "))
+        self.r = int(input("Podaj r: "))
+
+    def policz_sume(self):
+        return sum(self.ciagi)
+
+    def policz_elementy(self):
+        if self.a1 is not None and self.r is not None:
+            return len(self.ciagi)
+
+ciag = Ciag()
+ciag.pobierz_elementy()
+ciag.pobierz_parametry()
+print(ciag.policz_sume())
+print(ciag.policz_elementy())
+ciag.wyswietl_dane()
